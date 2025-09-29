@@ -1,6 +1,0 @@
-train[['reactants', 'reagents', 'products']] = train['reactants>reagents>production'].str.split('>', expand = True)
-test[['reactants', 'reagents', 'products']] = test['reactants>reagents>production'].str.split('>', expand = True)
-val[['reactants', 'reagents', 'products']] = val['reactants>reagents>production'].str.split('>', expand = True)
-
-#checking the columns
-print(train.columns, '\n', val.columns, '\n', test.columns)
