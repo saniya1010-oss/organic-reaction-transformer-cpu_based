@@ -1,0 +1,3 @@
+OpenNMT-py version 2.2.0, which is an open-source (MIT) neural machine translation framework
+RDKit, a library to Parse SMILES stings, visualize molecules, etc., 
+pytorch with CUDA to move model tensors.
