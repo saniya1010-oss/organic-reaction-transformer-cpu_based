@@ -1,0 +1,8 @@
+train = pd.read_csv(r"C:\Users\sayye\OneDrive\Documents\New folder (2)\USPTO 50k dataset\uspto50k_train.csv")
+test = pd.read_csv(r"C:\Users\sayye\OneDrive\Documents\New folder (2)\USPTO 50k dataset\uspto50k_test.csv")
+val = pd.read_csv(r"C:\Users\sayye\OneDrive\Documents\New folder (2)\USPTO 50k dataset\uspto50k_val.csv")
+
+#a glimpse of the datasets
+print(train.head(),'\n\n', val.head(), '\n\n', test.head())
+
+print(f'Shape of the train dataset:\t{train.shape}\nShape of the validation dataset:\t{val.shape}\nShape of the test dataset:\t{test.shape}')
