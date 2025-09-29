@@ -1,0 +1,25 @@
+config = {
+    'save_data': 'uspto_50k_run',
+    'src_vocab': 'uspto_50k_run/vocab.src',
+    'tgt_vocab': 'uspto_50k_run/vocab.tgt',
+    'overwrite': True,
+    'share_vocab': True,
+    'data': {
+        'corpus-1': {
+            'path_src': 'uspto_50k_train_reactants.txt',
+            'path_tgt': 'uspto_50k_train_products.txt',
+        },
+        'valid': {
+            'path_src': 'uspto_50k_val_reactants.txt',
+            'path_tgt': 'uspto_50k_val_products.txt',
+        }
+    }
+}
+
+# Create folder and save YAML file
+folder = 'example_run'
+os.makedirs(folder, exist_ok=True)
+with open(os.path.join(folder, 'run_config.yaml'), 'w') as f:
+    yaml.dump(config, f)
+
+print("run_config.yaml created successfully!")
